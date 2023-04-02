@@ -1,0 +1,63 @@
+
+:root {
+    --color01: rgb(228, 100, 104);
+    --color02: rgb(100, 228, 202);
+    --color03: rgb(102, 228, 100);
+    --color04: rgb(205, 199, 32);
+    --color05: rgb(229, 146, 200);
+    --color-font01:rgb(74, 74, 74);
+    --color-font02:rgb(148, 148, 148);
+    --color-font03:rgb(58, 58, 58);
+    --color-background01:rgb(246, 238, 223);
+}
+.header-container {
+    max-width: 95%;
+    min-width: 70%;
+    margin: auto;
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+}
+
+.logo-container {
+    padding: 7px 28px;
+    border-radius: 14px;
+    background-color: rgb(228, 100, 104);
+}
+.logo-img {
+    width: 170px;
+    color: var(--color-background01);
+}
+
+.nav-container {
+    display: flex;
+    padding-right: 28px;
+}
+.nav-list-wrapper {
+    list-style: none;
+    display: flex;
+    gap: 20px;    
+}
+.nav-list::after {
+    content: '/';
+    padding-left: 14px;
+    color: var(--color-font02);
+}
+.nav-list, .nav-list-end {
+    color: var(--color-font03);
+    font-size: 19px;
+}
+
+.nav-list:hover, .nav-list-end:hover {
+    color: var(--color02);
+    cursor: pointer;
+    transition: .5s;
+}

@@ -1,0 +1,107 @@
+:root {
+    --color01: rgb(228, 100, 104);
+    --color02: rgb(100, 228, 202);
+    --color03: rgb(102, 228, 100);
+    --color04: rgb(205, 199, 32);
+    --color-font01:rgb(74, 74, 74);
+    --color-font02:rgb(148, 148, 148);
+    --color-font03:rgb(58, 58, 58);
+    --color-background01:rgb(255, 251, 244);
+}
+
+
+.container-section01-wrapper{
+
+    background-color: var(--color-background01);
+}
+.container-section01 {
+    position: relative;
+    /* top: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    /* align-items: center; */
+    justify-items: center;
+    justify-content: center;
+    /* justify-content: center; */
+    width: 84vw;
+    gap: 28px;
+    padding-bottom: 70px;
+    margin: auto;
+    
+
+}
+.container-section01 a {
+    width: 70px;
+    height: 35px;
+    border-radius: 3.5px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: .5s;
+    
+}
+
+.container-section01 a:hover {
+    background-color: black;
+}
+
+.content-summary-icon {
+    position: relative;
+    top: -12%;
+    background-color: var(--color-background01);
+    width: 60%;
+    height: 100px;
+    /* height: 50px; */
+    padding: 15%; 
+    border-radius: 50%;
+    font-size: 42px;
+}
+
+.content-grid01 .fa-leaf {
+    color: var(--color01);
+}
+
+.content-grid02 .fa-themeco {
+    color: var(--color02);
+}
+
+.content-grid03 .fa-pagelines {
+    color: var(--color03);
+}
+
+.content-grid04  .fa-lightbulb {
+    color: var(--color04);
+    width: 60%;
+    
+}
+
+.ctg-all {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+}
+.content-summary-title {
+    position: relative;
+    margin-top: -50px;
+    z-index: 22;
+}
+.ctg-all > .content-summary-title, .content-summary-subtitle, .content-summary-description {
+    margin-bottom: 20px;
+}
+
+.summary-btn01 {
+    background-color: var(--color01);
+}
+.summary-btn02 {
+    background-color: var(--color02);
+}
+.summary-btn03 {
+    background-color: var(--color03);
+}
+.summary-btn04 {
+    background-color: var(--color04);
+}

@@ -1,0 +1,89 @@
+:root {
+    --color01: rgb(228, 100, 104);
+    --color02: rgb(100, 228, 202);
+    --color03: rgb(102, 228, 100);
+    --color04: rgb(205, 199, 32);
+    --color05: rgb(229, 146, 200);
+    --color-font01:rgb(74, 74, 74);
+    --color-font02:rgb(148, 148, 148);
+    --color-font03:rgb(58, 58, 58);
+    --color-font04:rgb(115, 115, 115);
+    --color-background01:rgb(246, 238, 223);
+}
+
+.container-section03 {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px 70px;
+    /* background-color: aqua; */
+}
+.section03-left-wrapper {
+    display: flex;
+    align-items: center;
+    /* gap: 30px; */
+    /* width: 80%; */
+    /* background-color: aquamarine; */
+    border-right: 1px solid rgba(0, 0, 0, 0.099);
+    padding-right: 50px;
+}
+
+.section03-left-content {
+    padding-left: 30px;
+}
+
+.section03-left-title {
+    font-size: 35px;
+    color: var(--color01);
+    padding-bottom: 20px;
+}
+
+.section03-left-text {
+    /* width: 75%; */
+}
+
+.section03-left-img {
+    height: 200px;
+}
+
+.section03-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.section03-right-title {
+    font-size: 21px;
+    font-weight: bolder;
+    color: var(--color-font01);
+    padding-bottom: 20px;
+}
+
+.section03-right-social-midia .fa-brands {
+    font-size: 42px;
+    text-decoration: none;
+    padding-right: 20px;
+    transition: 0.5s;
+
+}
+
+.section03-right-social-midia .fa-brands:hover {
+    color: rgb(7, 97, 97);
+    scale: 1.1;
+
+}
+
+.section03-right-social-midia .fa-facebook {
+    color: var(--color02);
+}
+.section03-right-social-midia .fa-instagram {
+    color: var(--color02);
+}
+.section03-right-social-midia .fa-tiktok {
+    color: var(--color02);
+}
+.section03-right-social-midia .fa-twitter {
+    color: var(--color02);
+}
