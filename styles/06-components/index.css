@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merienda:wght@300;400;500;800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --color01: rgb(228, 100, 104);
+    --color02: rgb(100, 228, 202);
+    --color03: rgb(102, 228, 100);
+    --color04: rgb(205, 199, 32);
+    --color-font01:rgb(74, 74, 74);
+    --color-font02:rgb(148, 148, 148);
+    --color-font03:rgb(58, 58, 58);
+    --color-background01:rgb(255, 251, 244);
+}
+
+
+
+h3 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 12px;
+}
+
+html {
+
+    height: 100vh;
+    width: 100vw;    
+}
+
+body {
+    /* background-color: rgb(255, 0, 225); */
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 87%;
+    grid-template-rows: 157px calc(107px - 100vh) 50px;
+    justify-content: center;
+}
+
+.section01-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(241, 241, 241);
+    position: absolute;
+    width: 100vw;
+    padding: 0 6.5%;
+    height: 37px;
+    align-items: center;
+
+    /* height: 100%; */
+}
+
+header {
+    
+    /* background-color: blue; */
+    display: flex;
+    height: 100%;
+    /* align-content: center; */
+    /* align-items: center; */
+    justify-content: space-between;
+    color: var(--color-font01);
+    padding: 63px 0;
+
+}
+
+.header-container-nav ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.header-container-nav > ul > li > a {
+    text-decoration: none;
+    margin: 0 28px 0 10px;
+    color: var(--color-font01);
+}
+
+.header-container-content a {
+  
+    /* font-size: 28px; */
+    /* color: var(--color-font03); */
+
+}
+
+main {
+    /* background-color: aqua; */
+}
+
+
+footer {
+/* background-color: blueviolet; */
+}
