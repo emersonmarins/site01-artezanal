@@ -90,7 +90,8 @@
                 </div>
             </div>
         </section>
-        
+        <!--      Carousel Antigo          -->
+
 <!-- <section class="container-carousel01" data-carousel="container-carousel01">
             <div class="wrapper" data-slide="wrapper">
                 <div class="slide-wrapper" data-slide="slide-wrapper">
@@ -111,8 +112,61 @@
                 </div>
                 </div>
             </div>
-        </section>
-        <section class="container-section02-wrapper">
+        </section> -->
+        
+        
+        <!--       New Carousel             -->
+
+        <div class="wrapper" data-slide="wrapper">
+            <div class="slide-wrapper" data-slide="slide-wrapper">
+                <button class="bi bi-chevron-left" data-slide="nav-previous-button"></button>
+                <button class="bi bi-chevron-right" data-slide="nav-next-button"></button>
+                <div class="slide-list" data-slide="slide-list">
+
+                    <div class="slide-item" data-slide="slide-item" data-index="0">
+                        <div class="slide-content" data-slide="slide-content">
+                            <img src="img/products/sabonete06.webp" alt="" class="slide-img" data-slide="slide-img">
+                            <div class="slide-description" data-slide="slide-description">
+                                <h3>Projeto NRC07</h3>
+                                <p>Feito por Emerson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item" data-slide="slide-item" data-index="1">
+                        <div class="slide-content" data-slide="slide-content">
+                            <img src="img/products/sabonete07.webp" alt="" class="slide-img" data-slide="slide-img">
+                            <div class="slide-description" data-slide="slide-description">
+                                <h3>Projeto NRC08</h3>
+                                <p>Feito por Emerson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item" data-slide="slide-item" data-index="2">
+                        <div class="slide-content" data-slide="slide-content">
+                            <img src="img/products/sabonete08.webp" alt="" class="slide-img" data-slide="slide-img">
+                            <div class="slide-description" data-slide="slide-description">
+                                <h3>Projeto NRC09</h3>
+                                <p>Feito por Emerson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item" data-slide="slide-item" data-index="3">
+                        <div class="slide-content" data-slide="slide-content">
+                            <img src="img/products/sabonete09.webp" alt="" class="slide-img" data-slide="slide-img">
+                            <div class="slide-description" data-slide="slide-description">
+                                <h3>Projeto NRC010</h3>
+                                <p>Feito por Emerson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-controls" data-slide="controls-wrapper">
+    
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="container-section02-wrapper">
             <div class="content-left">
                 <img src="img/products/sabonete08.webp" alt="imagem-sabonete" class="section02-img"></img>
                 <div class="section02-content-left">
@@ -172,7 +226,16 @@
             <div><p>Feito por Emerson Marins</p></div>
         </footer> -->
     </div>
-    <script src="./js/carouselcreate.js"></script>
+    <!-- <script src="./js/carouselcreate.js"></script> -->
     <!-- <script src="./js/carousel.js"></script> -->
+
+    <script src="./js/carousel03.js"></script>
+    <script>
+        callFunctions({
+            startSlideIndex: 0,
+            autoPlay: false,
+            timeInterval: 1000
+        });
+    </script>
 </body>
 </html>
