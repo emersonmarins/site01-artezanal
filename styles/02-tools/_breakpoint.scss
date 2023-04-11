@@ -1,0 +1,40 @@
+$breakpoint: (
+    'tiny': 480,
+    'small': 768,
+    'medium': 1024,
+    'large': 1440,
+    'extra-large': 1920
+);
+
+@mixin mq-down($key) {
+    @if map-has-key($map: $breakpoint, $key: $key) {
+        $size : map-get($map: $breakpoint, $key: $key);
+
+        @media (min-width: #{$size}px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: #{$key}px) {
+            @content;
+        }
+    }
+};
+
+@mixin mq-up($key) {
+    @if map-has-key($map: $breakpoint, $key: $key) {
+        $size : map-get($map: $breakpoint, $key: $key);
+
+        @media (max-width: #{$size}px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (max-width: #{$key}px) {
+            @content;
+        }
+    }
+};
+ 

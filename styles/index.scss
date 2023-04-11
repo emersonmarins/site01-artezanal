@@ -1,37 +1,11 @@
-//   =======================
-//          Settings
-//   =======================
 @forward '01-settings/index';
 
-
-//   =======================
-//          Tools
-//   =======================
-// @forward '02-tools';
-
-
-
-//   =======================
-//          Generics
-//   =======================
+@forward '02-tools/index';
 
 @forward '03-generics/index';
 
-
-//   =======================
-//          Elements
-//   =======================
-
 @forward '04-elements/index';
 
+@forward '05-objects/index';
 
-//   =======================
-//          Objects
-//   =======================
-// @forward '05-objects/';
-
-
-//   =======================
-//          Components
-//   =======================
 @forward '06-components/index';

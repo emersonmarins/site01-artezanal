@@ -1,0 +1,99 @@
+@use '../02-tools/index' as *;
+
+$carousel-top: 'c-carousel-top';
+
+.#{$carousel-top} {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    
+    &__lines {
+        width: 90vw;
+        height: 10px;
+        z-index: 100;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10px;
+        margin: 0 auto;
+        gap: 28px;
+
+        @include mq-up(832) {
+            display: none;
+        }
+        .line01--color {
+            background-color: var(--color06);
+        }
+
+        .line02--color {
+            background-color: var(--color02);
+        }
+        
+        .line03--color {
+            background-color: var(--color03);
+        }
+        
+        .line04--color {
+            background-color: var(--color04);
+        }
+    }
+    
+    .c-slides-list {
+        display: flex;
+        width: 100%;
+        
+        .item {
+            width: 100%;
+            background-color: black;
+            flex-shrink: 0;
+            
+            &__img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.o-btn-prev,
+.o-btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 21px;
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 50%;
+    color: white;
+    transition: 0.7s;
+    
+    @include mq-up(632) {
+        padding: 3%;
+        font-size: 3vw;
+        top: 60%;
+    }
+}
+
+.o-btn-prev:hover,
+.o-btn-next:hover {
+    background-color: rgba(223, 68, 94, 0.411);
+    cursor: pointer;
+    transition: 0.7s;
+    padding: 23px 17px;
+    color: rgb(231, 231, 231);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.178);
+    
+    @include mq-up(632) {
+        padding: 3.4vw 2.8vw;
+
+    }
+}
+
+.o-btn-prev {
+    left: 20px;
+}
+
+.o-btn-next {
+    right: 20px;
+}

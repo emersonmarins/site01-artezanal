@@ -1,0 +1,18 @@
+.u-btn-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-merianda);
+    font-size: var(--font-step-01);
+    font-weight: 500;
+    width: 100px;
+    height: 39px;
+    border-radius: 3.5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.u-btn-style:hover {
+    background-color: black;
+}

@@ -6,9 +6,13 @@
     --space-s: clamp(1.13rem, calc(0.83rem + 0.75vw), 1.5rem);
     --space-m: clamp(1.69rem, calc(1.24rem + 1.13vw), 2.25rem);
     --space-l: clamp(2.25rem, calc(1.65rem + 1.5vw), 3rem);
+    --space-negative-l: clamp(-2.25rem, calc(-1.65rem + -1.5vw), -3rem);
     --space-xl: clamp(3.38rem, calc(2.48rem + 2.25vw), 4.5rem);
     --space-2xl: clamp(4.5rem, calc(3.3rem + 3vw), 6rem);
     --space-3xl: clamp(6.75rem, calc(4.95rem + 4.5vw), 9rem);
+    
+    /* Space Negative */
+    --space-negative-vp-l: clamp(-10vw, -5.5vw, -7vw);
 
     /* One-up pairs */
     --space-3xs-2xs: clamp(0.31rem, calc(-0.04rem + 0.88vw), 0.75rem);

@@ -7,167 +7,171 @@
     <title>Artesanato</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/section01.css">
-    <link rel="stylesheet" href="css/carousel-infinit.css">
-    <link rel="stylesheet" href="css/section02.css">
-    <link rel="stylesheet" href="css/section03.css">
-    <link rel="stylesheet" href="css/footer.css">
+    
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <!-- <link rel="stylesheet" href="css/section01.css"> -->
+    <!-- <link rel="stylesheet" href="css/carousel-infinit.css"> -->
+    <!-- <link rel="stylesheet" href="css/section02.css"> -->
+    <!-- <link rel="stylesheet" href="css/section03.css"> -->
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <header class="header-container">
-        <div class="logo-container">
-            <h1><img class="logo-img" src="img/logoArtesanato1.png" alt=""></h1>
-        </div>
-        <nav class="nav-container">
-            <ul class="nav-list-wrapper">
-                <li class="nav-list" id=""><a src="./">Home</a></li>
-                <li class="nav-list" id=""><a src="./">Quem somos</a></li>
-                <li class="nav-list" id=""><a src="./">Produtos</a></li>
-                <li class="nav-list-end" id=""><a src="./">Contato</a></li>
-            </ul>
-        </nav>
+    <div class="l-wrapper">
+        <header class="c-header">
+            <div class="logo-container">
+               <img class="logo" src="img/logoArtesanato1.png" alt="">
+            </div>
+            <nav class="c-nav">
+                <ul class="list-wrapper">
+                    <li class="c-nav__item" id=""><a src="./"><h6 class="c-nav__item--line">Home</h6></a></li>
+                    <li class="c-nav__item" id=""><a src="./"><h6 class="c-nav__item--line">Quem somos</h6></a></li>
+                    <li class="c-nav__item" id=""><a src="./"><h6 class="c-nav__item--line">Produtos</h6></a></li>
+                    <li class="c-nav__item" id=""><a src="./"><h6 class="c-nav__item--line">Contato</h6></a></li>
+                </ul>
+            </nav>
+            <button class="c-header__hamburg bi bi-list is-hidden"></button>
         
-    </header>
-    <section class="carousel-wrapper">
-        <div class="carousel-line">
-            <div class="carousel-line01"></div>
-            <div class="carousel-line02"></div>
-            <div class="carousel-line03"></div>
-            <div class="carousel-line04"></div>
-        </div>
-        <div class="carousel-list">
-            <div class="carousel-item">
-                <img src="img/imagem01.jpg" alt="">
+        </header>
+        <section class="c-carousel-top">
+            <div class="c-carousel-top__lines">
+                <div class="line01--color"></div>
+                <div class="line02--color"></div>
+                <div class="line03--color"></div>
+                <div class="line04--color"></div>
             </div>
-            <div class="carousel-item hidde">
-                <img  src="img/imagem02.jpg" alt="">
-            </div>
-            <div class="carousel-item hidde">
-                <img src="img/imagem03.jpg" alt="">
-            </div>
-            <div class="carousel-item hidde">
-                <img src="img/imagem04.jpg" alt="">
-            </div>
-        </div>
-        <div class="carousel-slide-prev fa fa-duotone fa-angles-left"></div>
-        <div class="carousel-slide-next fa fa-duotone fa-angles-right" ></div>
-    </section>
-    <section class="container-section01-wrapper">
-        <div class="container-section01">
-            <div class="content-grid01 ctg-all">
-                <div class="content-summary-icon fa-solid fa-leaf"></div>
-                <div class="content-summary-title"><h3>History</h3></div>
-                <div class="content-summary-subtitle"><h4>Como tudo começou</h4></div>
-                <div class="content-summary-description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam aut commodi molestias sunt nulla eius, obcaecati nemo sed voluptatem asperiores deleniti quidem unde aperiam accusamus minus rem in quas?</p></div>
-                <a class="summary-btn01" href="http://">mais</a>
-            </div>
-            <div class="content-grid02 ctg-all">
-                <div class="content-summary-icon fa-brands fa-themeco"></div>
-                <div class="content-summary-title"><h3>Products</h3></div>
-                <div class="content-summary-subtitle"><h4>Conheça nossos produtos</h4></div>
-                <div class="content-summary-description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sit officiis, assumenda sunt aliquam dolore, nulla illum vero error reprehenderit amet odio est iste! Quo porro quod similique itaque omnis?</p></div>
-                <a class="summary-btn02" href="http://">mais</a>
-            </div>
-            <div class="content-grid03 ctg-all">
-                <div class="content-summary-icon fa-brands fa-pagelines"></div>
-                <div class="content-summary-title"><h3>Ecologico</h3></div>
-                <div class="content-summary-subtitle"><h4>Ecologicamente corretos</h4></div>
-                <div class="content-summary-description"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum et corporis inventore aliquam aliquid repellat quo ex nobis, voluptatum assumenda iure voluptate facere numquam qui culpa beatae minima est?</p></div>
-                <a class="summary-btn03" href="http://">mais</a>
-            </div>
-            <div class="content-grid04 ctg-all">
-                <div class="content-summary-icon fa-sharp fa-solid fa-lightbulb"></div>
-                <div class="content-summary-title"><h3>Novidades</h3></div>
-                <div class="content-summary-subtitle"><h4>Lançamentos</h4></div>
-                <div class="content-summary-description"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum atque blanditiis aperiam aspernatur, maxime natus. Labore deleniti animi odio unde nesciunt at soluta accusamus fugiat necessitatibus tenetur, in quis cupiditate.</p></div>
-                <a class="summary-btn04" href="http://">mais</a>
-            </div>
-        </div>
-    </section>
-     
-    <section class="container-carousel01" data-carousel="container-carousel01">
-        <div class="wrapper" data-slide="wrapper">
-            <div class="slide-wrapper" data-slide="slide-wrapper">
-                <button class="bi bi-chevron-left" data-slide="nav-previous-button"></button>
-                <button class="bi bi-chevron-right" data-slide="nav-next-button"></button>
-            <div class="slide-list" data-slide="slide-list">
-               
-            </div>
-            <div class="slide-controls" data-slide="controls-wrapper">
-                <div class="control-line-left"> </div>
-                <div>
-                    <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
-                    <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
-                    <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
-                    <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
+            <div class="c-slides-list">
+                <div class="item">
+                    <img class="item__img" src="img/imagem01.jpg" alt="imagem-sabonete">
                 </div>
-                <div class="control-line-right"> </div>
-            </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-section02-wrapper">
-        <div class="content-left">
-            <img src="img/products/sabonete08.webp" alt="imagem-sabonete" class="section02-img"></img>
-            <div class="section02-content-left">
-                <div class="section02-left-title">
-                    <h1 class="section02-left-title-destak">Novidade!</h1>
-                    <h1>Fragancia Sensação</h1>
+                <div class="item">
+                    <img  class="item__img" src="img/imagem02.jpg" alt="imagem-sabonete">
                 </div>
-                <div class="section02-left-subtitle">
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                <div class="item">
+                    <img class="item__img" src="img/imagem03.jpg" alt="imagem-sabonete">
                 </div>
-                <div class="section02-left-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis exercitationem quaerat voluptatibus. Quae, veritatis corrupti.</p>
-                </div>
-                <a class="section02-btn" href="#">Saiba mais</a>
-            </div>   
-        </div>
-        <div class="content-right">
-            <div class="section02-right-reviews">
-                <div class="section02-right-data">17.05</div>
-                <div class="section2-right-title">
-                    <h3>Fragançia Eucalipto</h3>
-                </div>
-                <div class="section02-right-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="item">
+                    <img class="item__img" src="img/imagem04.jpg" alt="imagem-sabonete">
                 </div>
             </div>
-            <div class="section02-right-reviews">
-                <div class="section02-right-data">21.03</div>
-                <div class="section2-right-title">
-                    <h3>Sabonete Paixão</h3>
+            <div class="o-btn-prev fa fa-duotone fa-angles-left"></div>
+            <div class="o-btn-next fa fa-duotone fa-angles-right" ></div>
+        </section>
+        <section class="c-section01">
+            <div class="c-section01__wrapper">
+                <div class="c-section01__grid ctg-all">
+                    <div class="c-section01__line-icon u-color01"><i class="c-section01__icon fa-solid fa-leaf"></i></div>
+                    <div class="c-section01__title"><h3>History</h3></div>
+                    <div class="c-section01__subtitle"><h5>Como tudo começou</h4></div>
+                    <div class="c-section01__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam aut commodi molestias sunt nulla eius, obcaecati nemo sed voluptatem</p></div>
+                    <a class="c-section01__btn01 u-btn-style" href="http://">mais</a>
                 </div>
-                <div class="section02-right-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="c-section01__grid ctg-all">
+                    <div class="c-section01__line-icon u-color02"><i class="c-section01__icon fa-brands fa-themeco"></i></div>
+                    <div class="c-section01__title"><h3>Products</h3></div>
+                    <div class="c-section01__subtitle"><h5>Conheça nossos produtos</h4></div>
+                    <div class="c-section01__description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sit officiis, assumenda sunt aliquam dolore, nulla illum vero error reprehen</p></div>
+                    <a class="c-section01__btn02 u-btn-style" href="http://">mais</a>
+                </div>
+                <div class="c-section01__grid ctg-all">
+                    <div class="c-section01__line-icon u-color03"><i class="c-section01__icon fa-brands fa-pagelines"></i></div>
+                    <div class="c-section01__title"><h3>Ecologico</h3></div>
+                    <div class="c-section01__subtitle"><h5>Ecologicamente corretos</h4></div>
+                    <div class="c-section01__description"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum et corporis inventore aliquam aliquid repellat quo ex nobis.</p></div>
+                    <a class="c-section01__btn03 u-btn-style" href="http://">mais</a>
+                </div>
+                <div class="c-section01__grid ctg-all">
+                    <div class="c-section01__line-icon u-color04"><i class="c-section01__icon fa-sharp fa-solid fa-lightbulb"></i></div>
+                    <div class="c-section01__title"><h3>Novidades</h3></div>
+                    <div class="c-section01__subtitle"><h5>Lançamentos</h4></div>
+                    <div class="c-section01__description"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum atque blanditiis aperiam aspernatur, maxime natus. Labore deleniti animi</p></div>
+                    <a class="c-section01__btn04 u-btn-style" href="http://">mais</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container-section03">
-        <div class="section03-left-wrapper">
-            <img src="img/products/sabonete-promo.png" alt="" class="section03-left-img">
-            <div class="section03-left-content">
-                <h3 class="section03-left-title">Brinde!</h3>
-                <p class="section03-left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, placeat? Culpa consequatur modi voluptates praesentium saepe totam iusto sequi nemo</p>
+        </section>
+        
+<!-- <section class="container-carousel01" data-carousel="container-carousel01">
+            <div class="wrapper" data-slide="wrapper">
+                <div class="slide-wrapper" data-slide="slide-wrapper">
+                    <button class="bi bi-chevron-left" data-slide="nav-previous-button"></button>
+                    <button class="bi bi-chevron-right" data-slide="nav-next-button"></button>
+                <div class="slide-list" data-slide="slide-list">
+        
+                </div>
+                <div class="slide-controls" data-slide="controls-wrapper">
+                    <div class="control-line-left"> </div>
+                    <div>
+                        <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
+                        <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
+                        <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
+                        <button class="slide-control-button fa-sharp fa-solid fa-circle" data-slide="control-button"></button>
+                    </div>
+                    <div class="control-line-right"> </div>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="section03-right-wrapper">
-            <h4 class="section03-right-title">Nos siga nas mídias Sociais</h4>
-            <div class="section03-right-social-midia">
-                <a class=" fa-brands fa-facebook" href="#"></a>
-                <a class=" fa-brands fa-instagram" href="#"></a>
-                <a class=" fa-brands fa-tiktok" href="#"></a>
-                <a class=" fa-brands fa-twitter" href="#"></a>
-
+        </section>
+        <section class="container-section02-wrapper">
+            <div class="content-left">
+                <img src="img/products/sabonete08.webp" alt="imagem-sabonete" class="section02-img"></img>
+                <div class="section02-content-left">
+                    <div class="section02-left-title">
+                        <h1 class="section02-left-title-destak">Novidade!</h1>
+                        <h1>Fragancia Sensação</h1>
+                    </div>
+                    <div class="section02-left-subtitle">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    </div>
+                    <div class="section02-left-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis exercitationem quaerat voluptatibus. Quae, veritatis corrupti.</p>
+                    </div>
+                    <a class="section02-btn" href="#">Saiba mais</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer class="container-footer">
-        <div><p>Feito por Emerson Marins</p></div>
-    </footer>
+            <div class="content-right">
+                <div class="section02-right-reviews">
+                    <div class="section02-right-data">17.05</div>
+                    <div class="section2-right-title">
+                        <h3>Fragançia Eucalipto</h3>
+                    </div>
+                    <div class="section02-right-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                </div>
+                <div class="section02-right-reviews">
+                    <div class="section02-right-data">21.03</div>
+                    <div class="section2-right-title">
+                        <h3>Sabonete Paixão</h3>
+                    </div>
+                    <div class="section02-right-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-section03">
+            <div class="section03-left-wrapper">
+                <img src="img/products/sabonete-promo.png" alt="" class="section03-left-img">
+                <div class="section03-left-content">
+                    <h3 class="section03-left-title">Brinde!</h3>
+                    <p class="section03-left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, placeat? Culpa consequatur modi voluptates praesentium saepe totam iusto sequi nemo</p>
+                </div>
+            </div>
+            <div class="section03-right-wrapper">
+                <h4 class="section03-right-title">Nos siga nas mídias Sociais</h4>
+                <div class="section03-right-social-midia">
+                    <a class=" fa-brands fa-facebook" href="#"></a>
+                    <a class=" fa-brands fa-instagram" href="#"></a>
+                    <a class=" fa-brands fa-tiktok" href="#"></a>
+                    <a class=" fa-brands fa-twitter" href="#"></a>
+                </div>
+            </div>
+        </section>
+        <footer class="container-footer">
+            <div><p>Feito por Emerson Marins</p></div>
+        </footer> -->
+    </div>
     <script src="./js/carouselcreate.js"></script>
     <!-- <script src="./js/carousel.js"></script> -->
 </body>
