@@ -546,6 +546,7 @@ h6 {
 .wrapper {
   display: flex;
   align-items: center;
+  position: relative;
   height: 100%;
   margin: 50px 0;
 }
@@ -607,15 +608,15 @@ h6 {
 }
 
 .bi {
-  background-color: rgba(0, 0, 0, 0.318);
+  background-color: rgba(153, 153, 153, 0.288);
   border-radius: 35%;
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.598);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.164);
   padding: 5px 7px;
-  color: #ffffff;
+  color: #f8f8f8;
   border: none;
-  font-size: 36px;
+  font-size: 27px;
   position: absolute;
-  top: 47%;
+  top: 35%;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -629,7 +630,7 @@ h6 {
 }
 
 .bi:hover {
-  background-color: #0b0b0b;
+  background-color: rgba(207, 61, 105, 0.603);
   cursor: pointer;
 }
 

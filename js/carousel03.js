@@ -219,14 +219,12 @@ function setListeners() {
         slide_item.addEventListener("mousedown", event => mouseDown(event, index));
         slide_item.addEventListener("mouseup", event => mouseUp(event));
 
-        function testMove() {
-            state.movement_point = (event.clientX - state.starting_point);
-            console.log(state.movement_point)
-            state.saved_position = state.movement_point;
-            slide_list.style.transform = `translateX(${state.movement_point}px)`;
-
-            
-        }
+        // function testMove() {
+        //     state.movement_point = (event.clientX - state.starting_point);
+        //     console.log(state.movement_point)
+        //     state.saved_position = state.movement_point;
+        //     slide_list.style.transform = `translateX(${state.movement_point}px)`;   
+        // }
 
         // slide_item.addEventListener("mousedown", event => {
         //     state.current_slide_index = event.currentTarget.dataset.index;
@@ -241,8 +239,8 @@ function setListeners() {
         //     slideMove.removeEventListener('mousemove', testMove);
         // });
 
-        // slide_item.addEventListener("touchstart", event => touchStart(event, index));
-        // slide_item.addEventListener("touchend", event => touchEnd(event));
+        slide_item.addEventListener("touchstart", event => touchStart(event, index));
+        slide_item.addEventListener("touchend", event => touchEnd(event));
     })
 
     slide_btn_previous.addEventListener("click", previousSlide);
