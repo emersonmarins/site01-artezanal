@@ -459,6 +459,7 @@ h6 {
   height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 33px;
   background-color: var(--color-background02);
   border-radius: 50%;
