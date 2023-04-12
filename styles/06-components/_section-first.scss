@@ -48,11 +48,11 @@ $section-first: 'c-section01';
     
     &__icon {
         width: 130px;
-        height: 130px;
+        height: 100px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        font-size: 47px;
+        // align-items: center;
+        font-size: 33px;
         background-color: var(--color-background02);
         border-radius: 50%;
 
@@ -67,9 +67,10 @@ $section-first: 'c-section01';
             // width: 120px;
             // height: 12;
             background-color: var( --color-background02);
+            padding-top: 10px 0;
+
             // border-bottom: 5px solid rgba(41, 41, 41, 0.301);
-            margin: 40px 0 20px;
-            padding: 10px;
+            // padding: 0;
             // position: absolute;
             // z-index: 10;
 
@@ -80,26 +81,26 @@ $section-first: 'c-section01';
             border: 0;
         @include mq-up(480) {
             width: 270px;
-            height: 100px;
+            height: 50px;
             margin-bottom: 60px;
             display: flex;
             justify-content: center;
             position: relative;
             
             &.u-color01 {
-                border-bottom: 13px solid var(--color06);
+                border-bottom: 11px solid var(--color06);
             }
             
             &.u-color02{
-                border-bottom: 13px solid var(--color02);
+                border-bottom: 11px solid var(--color02);
             }
             
             &.u-color03 {
-                border-bottom: 13px solid var(--color03);
+                border-bottom: 11px solid var(--color03);
             }
             
             &.u-color04 {
-                border-bottom: 13px solid var(--color04);
+                border-bottom: 11px solid var(--color04);
             }
         }
         
@@ -146,6 +147,6 @@ $section-first: 'c-section01';
     }
     &__description {
     
-        margin: 0 20px;
+        margin: 0 40px;
     }
 }
