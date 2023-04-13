@@ -1,0 +1,102 @@
+@use '../02-tools/breakpoint' as *;
+$section03-wrapper: 'c-section03';
+
+.#{$section03-wrapper} {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px 70px;
+
+    @include mq-up(832) {
+        padding: 30px 20px;
+
+    }
+
+    @include mq-up(732) {
+        grid-template-columns: 1fr;
+        padding: 30px 70px;
+
+    }
+
+    @include mq-up(480) {
+        padding: 10px;
+    }
+
+    &__container01 {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.099);
+        padding-right: 50px;
+
+        @include mq-up(480) {
+            padding: 0 10px;
+        }
+        &__img {
+            height: 200px;
+
+            @include mq-up(480) {
+                height: 140px;
+            }
+        }
+    }
+
+    &__content {
+        padding-left: 30px;
+
+        &__title {
+            font-size: 35px;
+            color: var(--color01);
+            padding-bottom: 20px;
+
+        }
+
+        @include mq-up(480) {
+            padding-left: 20px;
+
+            &__title {
+                font-size: 27px;
+                padding-top: 30px;
+            }
+
+        }
+    }
+
+    &__container02 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+
+        @include mq-up(732) {
+            text-align: center;
+            padding-top: 40px;
+
+        }
+        @include mq-up(480) {
+            padding: 40px 0 ;
+        }
+
+        &__title {
+            font-size: 21px;
+            font-weight: bolder;
+            color: var(--color-font01);
+            padding-bottom: 20px;
+
+        }
+
+        .container-social-midia .fa-brands {
+            font-size: 29px;
+            text-decoration: none;
+            padding-right: 10px;
+            transition: 0.5s;
+            color: var(--color02);
+        }
+
+        .container-social-midia .fa-brands:hover {
+            color: rgb(7, 97, 97);
+            scale: 1.1;
+        }
+    }
+
+}

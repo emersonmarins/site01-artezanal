@@ -1,13 +1,16 @@
 @use '../02-tools/index' as *; 
-
 $carousel-first: 'c-carousel-first';
 
 .#{$carousel-first}{
+    width: 90vw;
+    margin: auto;
+    // background-color: blueviolet;
     display: flex;
     align-items: center;
     position: relative;
     height: 100%;
-    margin: 50px 0;
+    padding-top: 50px;
+    overflow: hidden;
 
     .select {
         /* background-color: aqua; */
@@ -20,15 +23,16 @@ $carousel-first: 'c-carousel-first';
     
     .slide-item{
     
-        width: calc(100vw / 4);
+        width: calc((90vw / 4));
         position: relative;
+        // flex-grow: 1;
         // left: 50vw;
         // transform: translateX(-50%);
         @include mq-up(732) {
-            width: calc(100vw / 3);
+            width: calc(90vw / 3);
         }
         @include mq-up(480) {
-            width: calc(100vw / 1);
+            width: calc(90vw / 1);
 
         }
     }

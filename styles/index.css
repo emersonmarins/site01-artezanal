@@ -141,8 +141,19 @@ a, p {
   transition: 0.5s;
 }
 
+.u-btn-destak {
+  width: 150px;
+  background: var(--color05);
+}
+
 .u-btn-style:hover {
   background-color: black;
+}
+
+.u-destak {
+  color: var(--color05);
+  font-weight: 600;
+  font-size: 39px;
 }
 
 body {
@@ -204,6 +215,11 @@ h5 {
 
 h6 {
   font-size: var(--font-step-0);
+}
+
+.l-wrapper {
+  width: 100vw;
+  overflow: hidden;
 }
 
 .c-header {
@@ -538,11 +554,14 @@ h6 {
 }
 
 .c-carousel-first {
+  width: 90vw;
+  margin: auto;
   display: flex;
   align-items: center;
   position: relative;
   height: 100%;
-  margin: 50px 0;
+  padding-top: 50px;
+  overflow: hidden;
   /*-------Não colocar padding nem margin, no container list e nem no slide-list-------*/
 }
 .c-carousel-first .select {
@@ -553,17 +572,17 @@ h6 {
   display: flex;
 }
 .c-carousel-first .slide-item {
-  width: 25vw;
+  width: 22.5vw;
   position: relative;
 }
 @media (max-width: 732px) {
   .c-carousel-first .slide-item {
-    width: 33.3333333333vw;
+    width: 30vw;
   }
 }
 @media (max-width: 480px) {
   .c-carousel-first .slide-item {
-    width: 100vw;
+    width: 90vw;
   }
 }
 .c-carousel-first .slide-content {
@@ -680,7 +699,168 @@ h6 {
   }
 }
 
-.l-wrapper {
-  width: 100vw;
-  overflow: hidden;
+.c-section02 {
+  background-color: var(--color-background01);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 50px 0;
+}
+@media (max-width: 832px) {
+  .c-section02 {
+    grid-template-columns: 1fr;
+  }
+}
+.c-section02__container01 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+}
+@media (max-width: 632px) {
+  .c-section02__container01 {
+    flex-direction: column;
+  }
+}
+.c-section02__content01 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 21px;
+}
+.c-section02__img {
+  height: 300px;
+}
+.c-section02__title {
+  text-align: center;
+}
+.c-section02__subtitle {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-font04);
+  text-align: center;
+}
+.c-section02__text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-font02);
+  text-align: center;
+}
+.c-section02__container02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 40px;
+}
+@media (max-width: 832px) {
+  .c-section02__container02 {
+    flex-direction: row;
+  }
+}
+.c-section02__content02 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(104, 103, 102, 0.192);
+}
+.c-section02__content02__title {
+  font-size: 19px;
+  color: var(--color05);
+}
+.c-section02__content02__data {
+  font-size: 1.2em;
+  color: var(--color02);
+}
+
+.c-section03 {
+  display: grid;
+  grid-template-columns: 60% 35%;
+  justify-content: center;
+  justify-items: center;
+  padding: 30px 70px;
+}
+@media (max-width: 832px) {
+  .c-section03 {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 732px) {
+  .c-section03 {
+    grid-template-columns: 1fr;
+    padding: 30px 70px;
+  }
+}
+@media (max-width: 480px) {
+  .c-section03 {
+    padding: 10px;
+  }
+}
+.c-section03__container01 {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.099);
+  padding-right: 50px;
+}
+@media (max-width: 480px) {
+  .c-section03__container01 {
+    padding: 0 10px;
+  }
+}
+.c-section03__container01__img {
+  height: 200px;
+}
+@media (max-width: 480px) {
+  .c-section03__container01__img {
+    height: 140px;
+  }
+}
+.c-section03__content {
+  padding-left: 30px;
+}
+.c-section03__content__title {
+  font-size: 35px;
+  color: var(--color01);
+  padding-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .c-section03__content {
+    padding-left: 20px;
+  }
+  .c-section03__content__title {
+    font-size: 27px;
+    padding-top: 30px;
+  }
+}
+.c-section03__container02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
+@media (max-width: 732px) {
+  .c-section03__container02 {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .c-section03__container02 {
+    padding: 40px 0;
+  }
+}
+.c-section03__container02__title {
+  font-size: 21px;
+  font-weight: bolder;
+  color: var(--color-font01);
+  padding-bottom: 20px;
+}
+.c-section03__container02 .container-social-midia .fa-brands {
+  font-size: 29px;
+  text-decoration: none;
+  padding-right: 10px;
+  transition: 0.5s;
+  color: var(--color02);
+}
+.c-section03__container02 .container-social-midia .fa-brands:hover {
+  color: rgb(7, 97, 97);
+  scale: 1.1;
 }/*# sourceMappingURL=index.css.map */

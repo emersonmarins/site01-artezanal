@@ -13,6 +13,15 @@
     transition: .5s;
 }
 
+.u-btn-destak {
+    width: 150px;
+    background: var(--color05);
+}
 .u-btn-style:hover {
     background-color: black;
+}
+.u-destak {
+    color: var(--color05);
+    font-weight: 600;
+    font-size: 39px;
 }

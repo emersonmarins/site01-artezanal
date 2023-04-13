@@ -17,7 +17,8 @@ const state = {
     current_slide_index: 0,
     position: 0,
     timeInterval: 0,
-    autoPlay: true
+    autoPlay: true,
+    width_view_port: 1200
 }
 
 function createButtons() {
@@ -71,6 +72,7 @@ function createClones() {
 }
 
 function adaptingViewPort() {
+    state.width_view_port = slide_item_array[1].offsetWidth;
     translateX(-(slide_item_array[1].offsetWidth * state.current_slide_index));
 }
 
@@ -95,6 +97,7 @@ function setSlideVisible({ index, animate }) {
 }
 
 function translateX(position) {
+   
     slide_list.style.transform = `translateX(${position}px)`;
     state.saved_position = position;
 }
@@ -146,13 +149,19 @@ function mouseUp(event) {
     let pointsToMove = event.type.includes('touch') ? 50 : 150;
 
     if (state.movement_point < -pointsToMove) {
-
-        setSlideVisible({ index: state.current_slide_index, animate: true });
+        console.log(state.width_view_port)
+        if (state.width_view_port < 481) {
+            nextSlide();
+        }else {
+            setSlideVisible({ index: state.current_slide_index, animate: true });
+        }
 
     } else if (state.movement_point > pointsToMove) {
-            console.log("previous");
-        setSlideVisible({ index: state.current_slide_index -2, animate: true });
-
+        if (state.width_view_port < 481) {
+            previousSlide();
+        } else {
+            setSlideVisible({ index: state.current_slide_index -2, animate: true });
+        }
     } else {
 
         setSlideVisible({ index: state.current_slide_index, animate: true });
